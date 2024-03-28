@@ -27,7 +27,7 @@
 
   margin-right: 5rem;
 
-  @media screen and(max-width:900px) {
+  @media screen and(max-width:1000px) {
     margin-right: 0;
     justify-content: center;
     align-items: center;
@@ -58,8 +58,8 @@
     }
 
     @media screen and(min-width:2000px) {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
     }
     @media screen and(max-width:2000px) {
       width: 70px;
@@ -139,7 +139,7 @@
 
 .skills-tooltip {
   @media screen and(min-width:2000px) {
-    font-size: 1.75rem !important;
+    font-size: 1.2rem !important;
     max-width: 500px !important;
     line-height: 2 !important;
   }

@@ -5,13 +5,19 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
       <div>
-        <BsLinkedin />
+        <BsLinkedin
+          onClick={() => window.open('https://www.linkedin.com/in/ahmaddev/')}
+        />
       </div>
       <div>
-        <BsInstagram />
+        <BsInstagram
+          onClick={() => window.open('https://www.instagram.com/eng_ahmad__/')}
+        />
       </div>
       <div>
-        <FaFacebookF />
+        <FaFacebookF
+          onClick={() => window.open('https://www.facebook.com/ahmed.5083/')}
+        />
       </div>
     </div>
   );

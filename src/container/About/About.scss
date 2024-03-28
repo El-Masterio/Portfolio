@@ -9,15 +9,29 @@
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 2rem;
+  // padding: 1rem;
+  @media screen and (max-width: 1000px) {
+    flex-direction: row;
+    // flex-wrap: nowrap;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
 }
 
 .app__profile-item {
-  width: 190px;
+  width: 200px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   margin: 2rem;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    margin: 0.625rem;
+  }
 
   img {
     width: 100%;
@@ -29,7 +43,7 @@
     width: 370px;
     margin: 2rem 4rem;
     img {
-      height: 320px;
+      height: 240px;
     }
   }
 }
