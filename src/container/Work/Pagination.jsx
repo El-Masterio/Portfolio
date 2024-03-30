@@ -8,11 +8,11 @@ const Pagination = ({
 }) => {
   let pages = [];
 
-  for (let i = 1; i < Math.ceil(totalPosts / postsPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
     pages.push(i);
   }
   return (
-    <div className="app__navigation">
+    <div className="app__pagination">
       {pages?.length > 1 &&
         pages?.map((page, index) => (
           <a
