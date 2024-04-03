@@ -16,11 +16,13 @@ const Pagination = ({
       {pages?.length > 1 &&
         pages?.map((page, index) => (
           <a
+            href
             key={index}
             className="app__navigation-dot"
             onClick={() => setCurrentPage(page)}
             style={currentPage === page ? { backgroundColor: '#313BAC' } : {}}
-          ></a>
+            aria-label="Pagination Dot"
+          />
         ))}
     </div>
   );
