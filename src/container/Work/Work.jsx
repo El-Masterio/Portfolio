@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-import { motion } from 'framer-motion';
+
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { client, urlFor } from '../../client';
+import { client } from '../../client';
 import './Work.scss';
 import WorkDetail from './WorkDetail';
 import Pagination from './Pagination';
@@ -15,7 +14,7 @@ const Work = () => {
 
   //Pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setpostsPerPage] = useState(4); //set to only four elements appear in each page
+  const [postsPerPage] = useState(4); //set to only four elements appear in each page
 
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
@@ -72,8 +71,6 @@ const Work = () => {
       />
     </>
   );
-  {
-  }
 };
 
 export default AppWrap(
